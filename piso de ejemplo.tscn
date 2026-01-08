@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://da46p60blmmux"]
+
+[ext_resource type="PackedScene" uid="uid://c1i8fa7i4uqra" path="res://PERSONAJE JIJI.tscn" id="1_advhw"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_1dmtx"]
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("WorldBoundaryShape2D_1dmtx")
+debug_color = Color(0.73859733, 0.35557047, 0.7771462, 0.41960785)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_advhw")]
+position = Vector2(-11, -39)
+script = null

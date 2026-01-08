@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://fxmoirljvrqy"]
+
+[ext_resource type="PackedScene" uid="uid://c1i8fa7i4uqra" path="res://PERSONAJE JIJI.tscn" id="1_2afwh"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_0f3ne"]
+b = Vector2(154, -1)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("SegmentShape2D_0f3ne")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_2afwh")]
+position = Vector2(33, -36)
